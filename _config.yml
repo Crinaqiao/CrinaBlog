@@ -1,19 +1,22 @@
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
-
+aplayer:
+  meting: true
+  asset_inject: false
 # Site
-title: 倾盖
-subtitle: '倾盖如故，白发如新'
-description: '一个学习Rust的学生，想用Rust写一套麻将'
-keywords: Rust,麻将
-author: 倾盖
+title: Crina
+subtitle: 'Win or bust.'
+description: 'A front-end engineer in school needs an internship urgently!'
+keywords: 前端工程师, Front end engineer,FE
+author: Crina
 language: en
-timezone: ''
+# font-family: 'title', sans-serif
+# timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://crina.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -90,8 +93,8 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
+include: 
+exclude: 
 ignore:
 
 # Extensions

@@ -1,12 +1,13 @@
 # Main menu navigation (導航目錄)
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 # --------------------------------------
+# Inject the css and script (aplayer/meting)
 
 # menu:
 #   Home: / || fas fa-home
 #   Archives: /archives/ || fas fa-archive
 #   Tags: /tags/ || fas fa-tags
-#   Categories: /categories/ || fas fa-folder-open
+#   Article: /categories/ || fas fa-folder-open
 #   List||fas fa-list:
 #     Music: /music/ || fas fa-music
 #     Movie: /movies/ || fas fa-video
@@ -14,16 +15,13 @@
 #   About: /about/ || fas fa-heart
 
 menu:
-  Home: / || fas fa-home
-  归档: /archives/
-  标签: /tags/
-  分类: /categories/
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
-  友链: /link/
-  关于: /about/
-
+  Home: /home/ || fas fa-home
+  Tools: /link/ ||fa-solid fa-screwdriver-wrench
+  # About||fa-sharp fa-solid fa-user-tie-hair-long||hide:
+  About||fa-fw fa fa-heartbeat||hide:
+    Album: /album/||fa-solid fa-photo-film
+    Resumes: /resumes/||fa-sharp fa-solid fa-file
+  Message Board: /message/||fa-fw fas fa-comment-dots
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -46,8 +44,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/Jc-Meet || Github
-  fas fa-envelope: mailto:jcmeet@outlook.com || Email
+  fab fa-github: https://github.com/Crinaqiao || Github
+  fas fa-envelope: mailto:2537784487@qq.com || Email
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -92,11 +90,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://riven-cabin.oss-cn-guangzhou.aliyuncs.com/blog/tx.jpg
+favicon: https://s3.bmp.ovh/imgs/2023/02/26/1317049c9a9f5cda.jpg
 
 # Avatar (頭像)
 avatar:
-  img: https://riven-cabin.oss-cn-guangzhou.aliyuncs.com/blog/tx.jpg
+  img: https://s3.bmp.ovh/imgs/2023/02/26/1317049c9a9f5cda.jpg
   effect: false
 
 # Disable all banner image
@@ -106,14 +104,14 @@ disable_top_img: false
 index_img: https://s3.bmp.ovh/imgs/2023/02/25/3a23309ddf486727.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://picsum.photos/2560/1289
+default_top_img:  https://picsum.photos/1080/1080?random=1928384
 
 # The banner image of archive page
-archive_img: https://picsum.photos/2560/1289
+archive_img:  https://picsum.photos/1080/1080?random=1928384
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://picsum.photos/2560/1289
+tag_img:  https://picsum.photos/1080/1080?random=1928384
 
 # The banner image of tag page
 # format:
@@ -124,7 +122,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://picsum.photos/2560/1289
+category_img:  https://picsum.photos/1080/1080?random=1928384
 
 # The banner image of category page
 # format:
@@ -161,6 +159,7 @@ post_meta:
     date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
+    hobby: true
     tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
@@ -215,11 +214,11 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
+    - img: /img/wechat.jpg
+      link: https://s3.bmp.ovh/imgs/2023/02/26/8a69f6979f475178.png
+      text: wechat
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
@@ -235,7 +234,7 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 3 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
@@ -263,7 +262,7 @@ noticeOutdate:
 # AddThis
 # https://www.addthis.com/
 addThis:
-  enable: false
+  enable: true
   pubid:
 
 # Share.js
@@ -283,14 +282,15 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Gitalk
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
+  use: Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
-  count: true # Display comment count in post's top_img
+  lazyload: true
+  count: true # Display comment count in top_img
   card_post_count: false # Display comment count in Home Page
+
 
 # disqus
 # https://disqus.com/
@@ -398,10 +398,10 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: false
+chat_hide_show: true
 
 # chatra
 # https://chatra.io/
@@ -446,7 +446,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: Hi, welcome to my <a href="https://jc-meet.cn/">blog</a>!
+  # custom_text: Hi, welcome to my <a href="https://jc-meet.cn/">blog</a>!
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -535,13 +535,16 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
+
+
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
-# The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: "#f5f3f2"
+# The formal of image: url(http://xxxxxx.com/xxx.jpg)url(https://s3.bmp.ovh/imgs/2023/02/26/af7390f38b963c89.jpg)
+background: url(https://s3.bmp.ovh/imgs/2023/02/26/af7390f38b963c89.jpg)
+
 
 # Footer Background
-footer_bg: true
+footer_bg: https://s3.bmp.ovh/imgs/2023/02/26/af7390f38b963c89.jpg
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -555,7 +558,7 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -580,7 +583,7 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
   shake: true #  open shake (抖動特效)
   mobile: false
@@ -593,7 +596,7 @@ fireworks:
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
@@ -618,6 +621,7 @@ beautify:
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
 
+
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
@@ -628,9 +632,12 @@ font:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
+# Font settings for the site title and site subtitle
+# 左上角网站名字 主页居中网站名字
 blog_title_font:
-  font_link:
-  font-family:
+  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -658,11 +665,13 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub: 
-    - 倾盖如故，白发如新
+    - Win or bust.
+    - Time is money.
+    - Great minds have purpose,other have wishes.
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: true
+  enable: false
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -678,22 +687,22 @@ aside:
   hide: false
   button: true
   mobile: true # display on mobile
-  position: left # left or right
+  position: right # left or right
   display:
     archive: true
     tag: true
     category: true
   card_author:
     enable: true
-    description: 一名在校大学生，喜欢Rust、Web前端还有麻将🀄 欢迎你来到我的博客,我在这里记录下我的技术成长!
+    description: Contact me:2537784487@qq.com
     button:
       enable: true
       icon: fab fa-github
-      text: 联系作者
-      link: https://github.com/Jc-Meet
+      text: Find Me
+      link: https://github.com/Crinaqiao
   card_announcement:
     enable: false
-    content: This is my Blog
+    content: Contact me:2537784487@qq.com 
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all
@@ -704,10 +713,11 @@ aside:
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
+    color: true
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: false
@@ -813,7 +823,7 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
+  style: simple
   icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
@@ -827,14 +837,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
-  exclude:
+  enable: true
+  exclude: true
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -897,9 +907,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
