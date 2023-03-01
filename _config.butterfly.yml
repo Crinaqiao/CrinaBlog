@@ -15,7 +15,7 @@
 #   About: /about/ || fas fa-heart
 
 menu:
-  Home: /home/ || fas fa-home
+  Home: / || fas fa-home
   Tools: /link/ ||fa-solid fa-screwdriver-wrench
   # About||fa-sharp fa-solid fa-user-tie-hair-long||hide:
   About||fa-fw fa fa-heartbeat||hide:
@@ -206,7 +206,7 @@ toc:
   style_simple: false # for post
 
 post_copyright:
-  enable: false
+  enable: true
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
@@ -234,18 +234,18 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  limit: 3 # Number of posts displayed
+  limit: 6 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
 photofigcaption: false
 
 # post_pagination (分頁)
-# value: 1 || 2 || false
+value: 1 || 2 || true
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: true
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
@@ -558,7 +558,7 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -852,7 +852,7 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
