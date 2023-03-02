@@ -6,8 +6,8 @@ type: "album"
 
 
 <div class="gallery-group-main">
-{% galleryGroup 'travel' 'Record travel' '/photo/scenery' https://s3.bmp.ovh/imgs/2023/02/27/23632bb0f1fc96ed.jpg %}
-{% galleryGroup 'Crina' 'Record me' '/photo/crina' https://s3.bmp.ovh/imgs/2023/02/27/17f20e4f38997934.jpg %}
+{% galleryGroup 'travel' 'Record travel' '../photo/scenery' https://s3.bmp.ovh/imgs/2023/02/27/23632bb0f1fc96ed.jpg %}
+{% galleryGroup 'Crina' 'Record me' '../photo/crina' https://s3.bmp.ovh/imgs/2023/02/27/17f20e4f38997934.jpg %}
 
 </div>
 
