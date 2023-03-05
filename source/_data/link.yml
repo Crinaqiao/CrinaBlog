@@ -9,7 +9,10 @@
       link: https://butterfly.js.org/
       avatar: 
       descr: 快速传送门~
-
+    - name: vercel
+      link: https://vercel.com/
+      avatar: 
+      descr: 免费部署一些小项目
 - class_name: 网站
   class_desc: 值得推荐的网站
   link_list:
