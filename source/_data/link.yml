@@ -13,6 +13,10 @@
       link: https://vercel.com/
       avatar: 
       descr: 免费部署一些小项目
+    - name: 职友
+      link: http://codeleilei.gitee.io/markdown2pdf/#/theme
+      avatar: http://codeleilei.gitee.io/markdown2pdf/logo.png
+      descr: 免费用markdown写简历
 - class_name: 网站
   class_desc: 值得推荐的网站
   link_list:
