@@ -104,14 +104,14 @@ disable_top_img: false
 index_img: https://s3.bmp.ovh/imgs/2023/02/25/3a23309ddf486727.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:  https://picsum.photos/1080/1080?random=1928384
+default_top_img: https://picsum.photos/1080/1080?random=1928384
 
 # The banner image of archive page
-archive_img:  https://picsum.photos/1080/1080?random=1928384
+archive_img: https://picsum.photos/1080/1080?random=1928384
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:  https://picsum.photos/1080/1080?random=1928384
+tag_img: https://picsum.photos/1080/1080?random=1928384
 
 # The banner image of tag page
 # format:
@@ -122,7 +122,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img:  https://picsum.photos/1080/1080?random=1928384
+category_img: https://picsum.photos/1080/1080?random=1928384
 
 # The banner image of category page
 # format:
@@ -151,7 +151,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: false
-  subtitle: 'Page Not Found'
+  subtitle: "Page Not Found"
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
@@ -163,7 +163,7 @@ post_meta:
     tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
-    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    date_type: created # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
@@ -291,7 +291,6 @@ comments:
   count: true # Display comment count in top_img
   card_post_count: false # Display comment count in Home Page
 
-
 # disqus
 # https://disqus.com/
 disqus:
@@ -314,11 +313,11 @@ livere:
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id: 'c7066865895b10918fdf'
-  client_secret: '16b22bcd5e0bed560069d6aee79928da0225c471'
-  repo: 'blog-comment'
-  owner: 'Jc-Meet'
-  admin: ['Jc-Meet']
+  client_id: "c7066865895b10918fdf"
+  client_secret: "16b22bcd5e0bed560069d6aee79928da0225c471"
+  repo: "blog-comment"
+  owner: "Jc-Meet"
+  admin: ["Jc-Meet"]
   option:
 
 # valine
@@ -535,13 +534,10 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
-
-
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)url(https://s3.bmp.ovh/imgs/2023/02/26/af7390f38b963c89.jpg)
 background: url(https://s3.bmp.ovh/imgs/2023/02/26/af7390f38b963c89.jpg)
-
 
 # Footer Background
 footer_bg: https://s3.bmp.ovh/imgs/2023/02/26/af7390f38b963c89.jpg
@@ -574,7 +570,7 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
@@ -619,8 +615,7 @@ beautify:
   enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
-
+  title-prefix-icon-color: "#F47466"
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -637,7 +632,6 @@ font:
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
   font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
-
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -664,7 +658,7 @@ subtitle:
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
-  sub: 
+  sub:
     - Win or bust.
     - Time is money.
     - Great minds have purpose,other have wishes.
@@ -702,7 +696,7 @@ aside:
       link: https://github.com/Crinaqiao
   card_announcement:
     enable: false
-    content: Contact me:2537784487@qq.com 
+    content: Contact me:2537784487@qq.com
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all
@@ -766,9 +760,9 @@ translate:
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: '繁'
+  msgToTraditionalChinese: "繁"
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '简'
+  msgToSimplifiedChinese: "简"
 
 # Read Mode (閲讀模式)
 readmode: true
@@ -838,7 +832,8 @@ note:
 # https://github.com/MoOx/pjax
 pjax:
   enable: true
-  exclude: true
+  exclude:
+    true
     # - xxxx
     # - xxxx
 
@@ -854,8 +849,8 @@ aplayerInject:
 snackbar:
   enable: true
   position: bottom-left
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
-  bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
+  bg_light: "#49b1f5" # The background color of Toast Notification in light mode
+  bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
@@ -924,7 +919,7 @@ CDN:
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: jsdelivr
 
-  # Add version number to CDN, true or false  
+  # Add version number to CDN, true or false
   version: false
 
   # Custom format
