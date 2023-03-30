@@ -13,7 +13,26 @@
 #     Movie: /movies/ || fas fa-video
 #   Link: /link/ || fas fa-link
 #   About: /about/ || fas fa-heart
+# gitalk
+# https://github.com/gitalk/gitalk
+gitalk:
+  client_id: d9bfa4d3a4b1d2b57b28
+  client_secret: 160eb253c91ac06c60f34b09509b85c884dbbd64
+  repo: Crinaqiao.github.io
+  owner: Crinaqiao
+  admin: Crinaqiao
+  option:
 
+comments:
+  # Up to two comments system, the first will be shown as default
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus
+  use: Gitalk
+  text: true # Display the comment name next to the` button
+  # lazyload: The comment system will be load when comment element enters the browser's viewport.
+  # If you set it to true, the comment count will be invalid
+  lazyload: false
+  count: true # Display comment count in post's top_img
+  card_post_count: false # Display comment count in Home Pag
 menu:
   Home: / || fas fa-home
   Tools: /link/ ||fa-solid fa-screwdriver-wrench
