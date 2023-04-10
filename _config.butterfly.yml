@@ -16,9 +16,9 @@
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id: d9bfa4d3a4b1d2b57b28
-  client_secret: 160eb253c91ac06c60f34b09509b85c884dbbd64
-  repo: https://github.com/Crinaqiao/blog_comment.git
+  client_id: ab8ce954e64ec2f3f253
+  client_secret: 1c98b7cc33f6e097d124339eb0f1bca1453f8279
+  repo: blog_comment
   owner: Crinaqiao
   admin: Crinaqiao
   option:
@@ -332,6 +332,7 @@ livere:
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
+  enable: true
   client_id: "c7066865895b10918fdf"
   client_secret: "16b22bcd5e0bed560069d6aee79928da0225c471"
   repo: "blog-comment"
@@ -343,7 +344,7 @@ gitalk:
 # https://valine.js.org
 
 valine:
-  enable: true
+  # enable: true
   appId: gKx1EslRY5EdgzQhc8UHpfZc-gzGzoHsz # leancloud application app id
   appKey: hhMyKkYw42lVfGcBXuJp4vsA # leancloud application app key
   verify: false
@@ -352,10 +353,10 @@ valine:
   guest_info: nick,mail,link
   pageSize: 10
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: # valine background
-  visitor: false
-  option:
+  # serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  # bg: # valine background
+  # visitor: false
+  # option:
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
