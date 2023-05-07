@@ -73,8 +73,8 @@ type: "resumes"
 - **技术栈**：Vue3+TypeScript+Vite+SCSS
 - **项目简介**：该项目是仿Element-ui组件库的功能。
 - **工作内容**：
-1 用VUE3封装多个组件，再用TS将组件编写为全局可用，在markdown文档展示。
-2 使用VUE3的defineProps（）和TS完成代码预览和显示隐藏功能，封装给各个组件进行引用。
+1 用VUE3封装多个组件，再用TypeScript将组件编写为全局可用，在markdown文档展示。
+2 使用VUE3的defineProps（）和TypeScript完成代码预览和显示隐藏功能，封装给各个组件进行引用。
 
 **颜值打分小程序**
 **2021.11 - 2021.12**
