@@ -42,7 +42,7 @@ type: "resumes"
 **2021.7 - 2021.10**
 
 ##### web前端开发
-- **技术栈**：VUE2+Element ui+Axios+HTML5+CSS3+JS+SpringBoot
+- **技术栈**：VUE2+Element ui+Axios
 - **项目简介**：该系统用于管理工作室人员的个人信息，打卡，值日，请假等，发布工作室接项目的通知和内容，工作室的指导老师和工作室成立的背景等信息。
 - **工作内容**：
 1 登录采用 Cookie + Token 的方式，用户分为管理员以及成员，并针对这几种角色对其进行权限控制
@@ -57,7 +57,7 @@ type: "resumes"
 **2022.11 - 2022.12**
 
 ##### 个人全栈开发
-- **技术栈**：Nodejs+Mysql+HTML5+CSS3+JS+VUE2+Element ui+Axios+Echarts
+- **技术栈**：Node.js+Mysql+VUE2+Element ui+Axios+Echarts
 - **项目简介**：该系统服务于商家，普通用户，管理员。商家可以入驻发布宠物服务项目，用户可以在该平台预定，评论等。该平台还有宠物论坛供用户讨论和学习。管理员可以对商家发布的消息进行审核。
 - **工作内容**：
 1 使用Node.js和Express开发文章，用户信息，订单等增删改查的接口。
